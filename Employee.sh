@@ -1,15 +1,17 @@
 #!/bin/bash -x
 
-#! /bin/bash -x
 
 random1=$((RANDOM%2))
 
 if [ $random1 -eq 0 ]
 
 then
-	echo " Employee is Present"
+	empRatePerHour=20
+	empHours=8
+	salary=$(($empRatePerHour * $empHours))
 else 
-	echo " Employee is no Present "
+	salary=0
+	
 fi
-
+echo "Salary is: " $salary
 
